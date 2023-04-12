@@ -1,6 +1,5 @@
 // ignore_for_file: non_constant_identifier_names
 
-
 class MyDate {
   static final now = DateTime.now();
 
@@ -44,33 +43,40 @@ class MyDate {
   ];
 
   // ignore: unused_field
-  static final List<SelecatDay> availableDay =[
-    SelecatDay(n_day: 2, n_month: 4),
-    SelecatDay(n_day: 9, n_month: 4),
-    SelecatDay(n_day: 16, n_month: 4),
-    SelecatDay(n_day: 23, n_month: 4),
-    SelecatDay(n_day: 30, n_month: 4),
-    SelecatDay(n_day: 5, n_month: 4),
-    SelecatDay(n_day: 12, n_month: 4),
+  static final List<DateTime> availableDay = [
+    DateTime(2023, 4, 2),
+    DateTime(2023, 4, 9),
+    DateTime(2023, 4, 16),
+    DateTime(2023, 4, 23),
+    DateTime(2023, 4, 30),
+    DateTime(2024, 4, 10),
+    DateTime(2023, 4, 12),
+    DateTime(2023, 4, 17),
+    DateTime(2023, 5, 2),
+    DateTime(2023, 5, 9),
+    DateTime(2023, 6, 16),
+    DateTime(2023, 3, 23),
+    DateTime(2023, 7, 30),
+    DateTime(2024, 6, 10),
+    DateTime(2023, 7, 12),
+    DateTime(2023, 6, 17),
   ];
-  static final List<SelecatDay> unavailableDay =[
-    SelecatDay(n_day: 3, n_month: 4),
-    SelecatDay(n_day: 10, n_month: 4),
-    SelecatDay(n_day: 17, n_month: 4),
-    SelecatDay(n_day: 24, n_month: 4),
-    SelecatDay(n_day: 6, n_month: 4),
-    SelecatDay(n_day: 13, n_month: 4),
-    SelecatDay(n_day: 20, n_month: 4),
+  static final List<DateTime> unavailableDay = [
+    DateTime(2023, 4, 3),
+    DateTime(2023, 4, 10),
+    DateTime(2023, 4, 17),
+    DateTime(2023, 4, 24),
+    DateTime(2023, 4, 25),
+    DateTime(2024, 4, 6),
+    DateTime(2023, 4, 13),
+    DateTime(2023, 5, 20),
+    DateTime(2023, 5, 3),
+    DateTime(2023, 6, 10),
+    DateTime(2023, 7, 17),
+    DateTime(2023, 6, 24),
+    DateTime(2023, 6, 25),
+    DateTime(2024, 7, 6),
+    DateTime(2023, 8, 13),
+    DateTime(2023, 9, 20),
   ];
-
-}
-
-class SelecatDay {
-  final int n_day;
-  final int n_month;
-
-  SelecatDay(
-    {required this.n_day,
-    required this.n_month,}
-  );
 }
